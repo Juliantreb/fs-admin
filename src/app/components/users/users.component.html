@@ -1,0 +1,28 @@
+<h3>Users</h3>
+<div class="table-responsive">
+  <table class="table table-striped table-sm">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Profile Photo URL</th>
+        <th>Facebook</th>
+        <th>Phone Number</th>
+        <th>Lives In</th>
+        
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="table-row" *ngFor="let user of users">
+        <td>{{user.id}}</td>
+        <td>{{user.ame}}</td>
+        <td>{{user.email}}</td>
+        <td>{{user.profilephoto}}</td>
+        <td>{{user.facebook}}</td>
+        <td>+27 0{{user.phonenumber}}</td>
+        <td>{{user.livesin}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
